@@ -22,7 +22,7 @@ body {
   z-index: -1;
 }
 
-svg {
+.header-background svg {
   display: block;
   width: 100%;
   height: auto;
@@ -54,15 +54,4 @@ svg {
   font-size: 1.5rem;
   font-weight: 500;
   color: #ddd8d8;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: .5em;
-}
-nav a {
-  color: white;
 }
