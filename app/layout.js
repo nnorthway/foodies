@@ -1,4 +1,5 @@
 import './globals.css';
+import Navigation from "./components/navigation.jsx"
 
 export const metadata = {
   title: 'NextLevel Food',
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
             ></path>
           </svg>
         </div>
-
+        <Navigation />
         {children}
       </body>
     </html>
