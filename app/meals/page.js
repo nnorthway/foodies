@@ -4,6 +4,11 @@ import MealsGrid from "../components/meals/mealsgrid"
 import { getMeals } from "@/lib/meals.js"
 import { Suspense } from "react"
 
+export const metadata = {
+  title: "Meals | NextLevel Food",
+  description: "Browse Meals"
+}
+
 async function Meals() {
   const meals = await getMeals()
   //throw new Error("Loading meals failed")

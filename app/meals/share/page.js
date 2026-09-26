@@ -5,6 +5,11 @@ import { shareMeal } from "@/lib/actions.js"
 import FormSubmit from "@/app/components/meals/formsubmit.jsx"
 import { useActionState } from "react"
 
+export const metadata = {
+  title: "Share Meals | NextLevel Food",
+  description: "Browse Meals"
+}
+
 export default function ShareMealPage() {
   const [formState, formAction] = useActionState(shareMeal, {message: null})
   return (

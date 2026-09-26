@@ -3,6 +3,16 @@ import Image from "next/image"
 import styles from "./page.module.css"
 import Link from "next/link"
 import { getMeal } from "@/lib/meals.js"
+
+export async function generateMetadata({params}) {
+  const meal = getMeal(params.slug) 
+
+  return {
+    title: `${meal.title} | NextLevel Food`,
+    description: `${meal.summary}`
+  }
+}
+
 export default async function MealPage({params}) {
   const pageParams = await params
   const meal = getMeal(pageParams.slug)
